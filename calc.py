@@ -84,7 +84,7 @@ def prompt_rendition():
     width = int(input('Enter the output width: '))
     height = int(input('Enter the output height: '))
     fps = float(input('Enter the output FPS (frames per second): '))
-    num_streams = int(input('Ether the number of streams of this renditions: '))
+    num_streams = int(input('Ether the number of streams of this rendition: '))
 
     return width, height, fps, num_streams
 
@@ -117,7 +117,7 @@ def calc_target_hours_to_win():
     value_per_hour = tickets_per_hour * ev
     price_per_pixel = (tickets_per_hour * ev) / float(pixels_per_hour)
 
-    print('Given the specified renditions you will and a target of 1 winning ticket every {} hours you will: '.format(hours_to_win))
+    print('Given the specified renditions, and a target of 1 winning ticket every {} hours you will: '.format(hours_to_win))
     print('Need to charge {} wei per pixel'.format(price_per_pixel))
     print('Encode {} pixels per hour'.format(pixels_per_hour))
     print('Receive {} tickets per hour'.format(tickets_per_hour))
